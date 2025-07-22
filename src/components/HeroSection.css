@@ -1,0 +1,163 @@
+/* src/components/HeroSectionBootstrap.css */
+
+/* Custom fonts - you'll need to import these from Google Fonts or similar */
+/* For 'Burger King' text, a script/handwriting font is needed. */
+/* For 'THE ULTIMATE' and descriptions, a clean sans-serif. */
+/* Example: */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Great+Vibes&display=swap'); */
+/* If you want to use a specific font like 'Great Vibes' for "Burger King",
+   you'd link it in your public/index.html or import it here.
+   For this example, I'll use a generic cursive fallback. */
+
+   .hero-section-bootstrap {
+    min-height: 70vh; /* Adjust height as needed */
+    background-color: #FEEED4; /* Light background color for the left side */
+    overflow: hidden; /* Ensure content doesn't spill out */
+  }
+  
+  .hero-left-col {
+    background-color: #FEEED4; /* Light background for the left column */
+  }
+  
+  .hero-right-col {
+    background-color: #FF9900; /* Orange background color for the right side */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: 700;
+    color: #333; /* Dark text color */
+    letter-spacing: 0.1em; /* Slight letter spacing */
+    text-transform: uppercase;
+  }
+  
+  .hero-title {
+    font-family: 'Georgia', serif; /* A strong serif font, or replace with a script font if you have one */
+    font-size: 5rem; /* Large font size for "Burger King" */
+    font-weight: bold;
+    color: #333;
+    line-height: 1;
+  }
+  
+  /* For a more accurate "Burger King" font appearance, you'd need a custom font.
+     If you have a specific font file, you'd use @font-face.
+     Example if you found a suitable free font:
+     @font-face {
+       font-family: 'BurgerKingDisplay';
+       src: url('/fonts/BurgerKingDisplay.woff2') format('woff2');
+       font-weight: normal;
+       font-style: normal;
+     }
+     .hero-title {
+       font-family: 'BurgerKingDisplay', cursive;
+     }
+  */
+  
+  .hero-description {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 450px; /* Limit width for readability */
+    line-height: 1.6;
+  }
+  
+  .hero-burger-image {
+    max-height: 80%; /* Adjust image size relative to column height */
+    object-fit: contain;
+  }
+  
+  /* Custom Button Styles to match design */
+  .custom-btn-orange {
+    background-color: #FF9900; /* Orange background */
+    border-color: #FF9900; /* Orange border */
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-btn-orange:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+    border-color: #e68a00;
+    color: white;
+  }
+  
+  .custom-btn-outline-orange {
+    background-color: transparent;
+    border: 1px solid #FF9900 !important; /* Orange outline */
+    color: #FF9900; /* Orange text */
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-btn-outline-orange:hover {
+    background-color: #FF9900; /* Fill with orange on hover */
+    color: white;
+  }
+  
+  /* Pagination Dots */
+  .hero-pagination-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.2); /* Light grey for inactive dots */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .hero-pagination-dots .dot.active {
+    background-color: #FF9900; /* Orange for the active dot */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .hero-section-bootstrap {
+      min-height: auto; /* Allow height to adjust */
+    }
+    .hero-left-col, .hero-right-col {
+      padding: 30px; /* Adjust padding for smaller screens */
+    }
+    .hero-left-col {
+      order: 2; /* Move text below image on smaller screens */
+    }
+    .hero-right-col {
+      order: 1; /* Move image above text on smaller screens */
+    }
+    .hero-title {
+      font-size: 3.5rem; /* Smaller font for title */
+    }
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+    .hero-description {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+    .hero-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 15px;
+    }
+    .hero-btn-primary, .hero-btn-secondary {
+      width: 80%; /* Make buttons wider */
+      max-width: 250px; /* Optional max width */
+    }
+    .hero-pagination-dots {
+      margin-top: 30px !important; /* Adjust margin for dots */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section-bootstrap {
+      flex-direction: column; /* Stack columns vertically */
+    }
+    .hero-left-col, .hero-right-col {
+      width: 100%; /* Full width for columns */
+    }
+    .hero-title {
+      font-size: 2.8rem;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+    .hero-burger-image {
+      max-height: 300px; /* Limit image height on very small screens */
+    }
+  }
+  

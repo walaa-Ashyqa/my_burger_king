@@ -1,0 +1,50 @@
+/* src/components/ContactContentSection.css */
+
+.contact-content-section {
+    background-color: #FEEED4; /* Light background matching your design */
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .contact-us-title {
+    font-size: 2.5rem;
+    color: #FF9900; /* Orange color */
+    font-family: 'Georgia', serif; /* Or your preferred bold font */
+    text-transform: uppercase;
+  }
+  
+  .contact-us-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .contact-info-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between info blocks */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .contact-content-section .row {
+      flex-direction: column; /* Stack columns on medium/small screens */
+    }
+    .contact-info-blocks {
+      align-items: center; /* Center info blocks when stacked */
+    }
+    .contact-info-blocks > div { /* Target individual info blocks */
+      width: 100%; /* Make info blocks take full width */
+      max-width: 400px; /* Limit their max width */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-content-section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .contact-us-title {
+      font-size: 2rem;
+    }
+  }
+  

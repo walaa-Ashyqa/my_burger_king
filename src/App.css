@@ -1,0 +1,82 @@
+/* src/App.css (or src/index.css) */
+
+/* Basic reset and font setup */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Using Inter as per instructions, or your preferred font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FEEED4; /* Consistent background for the entire app */
+}
+
+/* Ensure the root app div takes full height */
+#root, .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the app takes at least the full viewport height */
+}
+
+/* Header styling for fixed position */
+.header {
+  position: sticky; /* Or 'fixed' if you want it to always float, sticky is often better */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top */
+  /* Other header styles (background, padding, etc.) are in components/Header.css */
+}
+
+/* Content wrapper to push footer down and prevent content from going under fixed header */
+.content-wrapper {
+  flex-grow: 1; /* Allows content to take up available space, pushing footer down */
+  /* If header is 'fixed', you might need padding-top on this wrapper
+     equal to the header's height to prevent content from going underneath it.
+     Example: padding-top: 80px; (if header height is 80px) */
+}
+
+/* Footer styling */
+.footer {
+  /* Other footer styles (background, padding, etc.) are in components/Footer.css */
+  flex-shrink: 0; /* Prevents footer from shrinking if content is small */
+}
+
+/* General section styling to maintain consistent padding and background */
+section {
+  background-color: #FEEED4; /* Consistent light background for all sections */
+}
+
+/* Custom button styles (from HeroSectionBootstrap.css, can be moved to a global utilities file) */
+.custom-btn-orange {
+  background-color: #FF9900;
+  border-color: #FF9900;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.custom-btn-orange:hover {
+  background-color: #e68a00;
+  border-color: #e68a00;
+  color: white;
+}
+
+.custom-btn-outline-orange {
+  background-color: transparent;
+  border: 2px solid #FF9900;
+  color: #FF9900;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.custom-btn-outline-orange:hover {
+  background-color: #FF9900;
+  color: white;
+}
+
+/* Ensure Font Awesome is loaded for icons */
+/* If you're not using a direct link in index.html, you'd import it here */
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); */
+
+/* Global font for titles if not specific to a component */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif; /* Consistent bold/display font */
+}

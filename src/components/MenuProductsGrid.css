@@ -1,0 +1,24 @@
+/* src/components/MenuProductsGrid.css */
+
+.menu-products-grid-section {
+    background-color: #FEEED4; /* Light background */
+  }
+  
+  /* The ProductCard styling is handled in ProductCard.css */
+  /* No specific grid styles needed here beyond Bootstrap's Row/Col */
+  
+  /* Responsive adjustments for the grid */
+  @media (max-width: 992px) {
+    .menu-products-grid-section .col-lg-4 {
+      flex: 0 0 50%; /* Two columns on medium screens */
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu-products-grid-section .col-sm-6 {
+      flex: 0 0 100%; /* Single column on small screens */
+      max-width: 100%;
+    }
+  }
+  

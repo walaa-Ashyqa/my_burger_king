@@ -1,0 +1,50 @@
+/* src/components/StatsSection.css */
+
+.stats-section {
+    background-color: #FEEED4; /* Light background matching your design */
+    color: #333;
+  }
+  
+  .stat-item {
+    padding: 20px 0;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem; /* Large font for numbers */
+    font-weight: bold;
+    color: #FF9900; /* Orange color */
+    font-family: 'Georgia', serif; /* Or your preferred bold font */
+    line-height: 1;
+  }
+  
+  .stat-label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .stat-separator {
+    font-size: 2.5rem;
+    color: #ccc; /* Lighter color for separator */
+    padding: 0 30px; /* Space around separator */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .stat-item {
+      padding: 15px 0;
+      margin-bottom: 10px; /* Add some space between stacked items */
+    }
+    .stat-number {
+      font-size: 2rem;
+    }
+    .stat-label {
+      font-size: 1rem;
+    }
+    .stat-separator {
+      display: none; /* Hide separator on small screens */
+    }
+  }
+  

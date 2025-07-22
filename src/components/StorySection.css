@@ -1,0 +1,79 @@
+/* src/components/StorySection.css */
+
+.story-section {
+    background-color: #FEEED4; /* Light background matching your design */
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .story-title {
+    font-size: 2.5rem;
+    color: #FF9900; /* Orange color */
+    font-family: 'Georgia', serif; /* Or your preferred bold font */
+    text-transform: uppercase;
+  }
+  
+  .story-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    max-width: 500px; /* Limit width for readability */
+    margin-left: auto; /* Center text if needed on small screens */
+    margin-right: auto; /* Center text if needed on small screens */
+  }
+  
+  .story-pagination-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    /*Lightgreyforinactivedots*/border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+  
+  .story-pagination-dots .dot.active {
+    background-color: #FF9900; /* Orange for the active dot */
+  }
+  
+  .story-image-col img {
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for the image */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .story-section .row {
+      flex-direction: column-reverse; /* Stack image above text on medium/small screens */
+    }
+    .story-content {
+      text-align: center; /* Center text on smaller screens */
+    }
+    .story-pagination-dots {
+      justify-content: center !important; /* Center dots on smaller screens */
+    }
+    .story-image-col {
+      margin-bottom: 30px; /* Space between image and text */
+    }
+    .story-title {
+      font-size: 2rem;
+    }
+    .story-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .story-section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .story-title {
+      font-size: 1.8rem;
+    }
+  }
+  

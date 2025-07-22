@@ -1,0 +1,93 @@
+/* src/components/ProductCard.css */
+
+.product-card {
+    max-width: 350px; /* Max width for individual cards */
+    min-height: 150px; /* Adjusted min-height as image is back */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .product-image-wrapper {
+    flex-shrink: 0; /* Prevent image wrapper from shrinking */
+    width: 120px; /* Fixed width for the image container */
+    height: 120px; /* Fixed height for the image container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for positioning the glow and image */
+  }
+  
+  .product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the entire image is visible within its container */
+    border-radius: 0.5rem; /* Slightly rounded corners for the image */
+    position: relative; /* Ensure image is above the glow */
+    z-index: 2; /* Ensure image is above the glow */
+  }
+  
+  .product-image-glow {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjust size of the glow */
+    height: 100%; /* Adjust size of the glow */
+    background: radial-gradient(circle, rgba(255,153,0,0.4) 0%, rgba(255,153,0,0) 70%); /* Orange radial gradient */
+    border-radius: 50%; /* Circular glow */
+    filter: blur(15px); /* Blur effect for the glow */
+    z-index: 1; /* Behind the image */
+  }
+  
+  
+  .product-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-rating {
+    font-size: 1rem;
+    color: #FF9900; /* Orange color for rating */
+  }
+  
+  .product-rating .fas.fa-star {
+    color: gold; /* Gold color for the star icon */
+  }
+  
+  .product-price {
+    font-size: 1rem;
+    color: #FF9900; /* Orange color for price */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .product-card {
+      flex-direction: column; /* Stack image and info vertically */
+      text-align: center;
+      max-width: 300px; /* Adjust max-width for smaller screens */
+      padding: 20px;
+    }
+    .product-image-wrapper {
+      margin-right: 0;
+      margin-bottom: 15px;
+      width: 100px; /* Smaller image wrapper */
+      height: 100px;
+    }
+    .product-name {
+      font-size: 1.2rem;
+    }
+    .product-details {
+      flex-direction: column; /* Stack rating and price vertically */
+      gap: 5px;
+    }
+    .product-price {
+      font-size: 1.1rem;
+    }
+  }
+  
