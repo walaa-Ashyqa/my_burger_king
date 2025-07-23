@@ -1,42 +1,39 @@
-// src/components/ProductsSection.jsx
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import ProductCard from './ProductCard'; // Reusable component for product cards
+import ProductCard from './ProductCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ProductsSection.css'; // Custom CSS for specific styling
+import './ProductsSection.css';
 import { burger_1 } from '../assets';
 
 function ProductsSection() {
-  // Dummy data for products - in a real application, this would come from an API or context
   const products = [
     {
       id: 1,
       name: 'Veg & Chick ...',
       rating: 4.7,
       price: 15.99,
-      image: 'src\assets\burger_1.png', // Example image path
+      image: 'src\\assets\\burger_1.png',
     },
     {
       id: 2,
       name: 'Veg & Chick ...',
       rating: 4.7,
       price: 15.99,
-      image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Burger2', // Example image path
+      image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Burger2',
     },
     {
       id: 3,
       name: 'Veg & Chick ...',
       rating: 4.7,
       price: 15.99,
-      image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Burger3', // Example image path
+      image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Burger3',
     },
     {
       id: 4,
       name: 'Veg & Chick ...',
       rating: 4.7,
       price: 15.99,
-      image: {burger_1}
-      // Example image path
+      image: burger_1
     },
   ];
 
@@ -51,7 +48,7 @@ function ProductsSection() {
                 name={product.name}
                 rating={product.rating}
                 price={product.price}
-                image={product.image} // Added image prop back
+                image={product.image}
               />
             </Col>
           ))}

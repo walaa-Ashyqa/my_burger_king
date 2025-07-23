@@ -1,65 +1,59 @@
-/* src/components/WhoAreWeSection.css */
-
 .who-are-we-section {
-    background-color: #FEEED4; /* Light background matching your design */
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
-  .who-are-we-logo-col img {
-    max-width: 350px; /* Max width for the logo image */
-    height: auto;
-  }
-  
-  .who-are-we-title {
-    font-size: 2.5rem;
-    color: #FF9900; /* Orange color */
-    font-family: 'Georgia', serif; /* Or your preferred bold font */
-    text-transform: uppercase;
-    text-align: center; /* Center title on larger screens */
+  background-color: #FEEED4;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 
+.who-are-we-logo-col img {
+  max-width: 350px;
+  height: auto;
+}
+
+.who-are-we-title {
+  font-size: 2.5rem;
+  color: #FF9900;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.who-are-we-content {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.who-are-we-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .who-are-we-section .row {
+    flex-direction: column;
   }
-  
+  .who-are-we-logo-col {
+    margin-bottom: 30px;
+  }
   .who-are-we-content {
-    max-width: 600px; /* Limit text width for readability */
-    margin-left: auto; /* Push text to the right on larger screens */
-    margin-right: auto; /* Center text on smaller screens */
+    text-align: center;
   }
-  
-  .who-are-we-text {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.7;
-    text-align: center; /* Center title on larger screens */
+  .who-are-we-title {
+    text-align: center;
+  }
+}
 
+@media (max-width: 768px) {
+  .who-are-we-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 992px) {
-    .who-are-we-section .row {
-      flex-direction: column; /* Stack columns on medium/small screens */
-    }
-    .who-are-we-logo-col {
-      margin-bottom: 30px; /* Space between logo and text */
-    }
-    .who-are-we-content {
-      text-align: center; /* Center text on smaller screens */
-    }
-    .who-are-we-title {
-      text-align: center; /* Center title on smaller screens */
-    }
+  .who-are-we-title {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 768px) {
-    .who-are-we-section {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-    .who-are-we-title {
-      font-size: 2rem;
-    }
-    .who-are-we-text {
-      font-size: 1rem;
-    }
+  .who-are-we-text {
+    font-size: 1rem;
   }
-  
+}

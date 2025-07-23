@@ -1,33 +1,30 @@
-/* src/components/ContactInfoBlock.css */
-
 .contact-info-block {
-    min-height: 100px; /* Ensure consistent height */
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  }
-  
-  .contact-info-block:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  }
-  
-  .icon-wrapper {
-    width: 50px;
-    height: 50px;
-    background-color: #FF9900; /* Orange background for icon circle */
-    border-radius: 50%;
-    color: white;
-    font-size: 1.5rem;
-    flex-shrink: 0; /* Prevent shrinking */
-  }
-  
-  .info-title {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .info-value {
-    font-size: 0.95rem;
-    color: #666;
-  }
-  
+  min-height: 100px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.contact-info-block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background-color: #FF9900;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.info-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.info-value {
+  font-size: 0.95rem;
+  color: #666;
+}

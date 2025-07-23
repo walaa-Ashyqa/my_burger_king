@@ -1,8 +1,7 @@
-// src/components/CategoryTabs.jsx
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './CategoryTabs.css'; // Custom CSS for specific styling
+import './CategoryTabs.css';
 
 function CategoryTabs({ activeCategory, setActiveCategory }) {
   const categories = ['Burger', 'Chicken', 'Breakfast', 'Desserts', 'Sides'];

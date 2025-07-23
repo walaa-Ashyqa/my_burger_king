@@ -1,8 +1,7 @@
-// src/components/ContactForm.jsx
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ContactForm.css'; // Custom CSS for styling
+import './ContactForm.css';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -23,10 +22,9 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send formData to a backend API
     console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.'); // Using alert for demo, replace with custom modal
-    setFormData({ // Reset form
+    alert('Thank you for your message! We will get back to you soon.');
+    setFormData({
       name: '',
       email: '',
       phone: '',
@@ -36,7 +34,7 @@ function ContactForm() {
   };
 
   return (
-    <Form className="contact-form  rounded-4 shadow p-4 p-md-5" onSubmit={handleSubmit}>
+    <Form className="contact-form rounded-4 shadow p-4 p-md-5" onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
         <Form.Control
           type="text"

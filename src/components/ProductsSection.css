@@ -1,4 +1,3 @@
-/* src/components/ProductsSection.css */
 
 .products-section {
     background-color: #FEEED4; /* Light background matching your design */
@@ -6,14 +5,13 @@
   
   .products-section-title {
     font-size: 2.5rem;
-    color: #FF9900; /* Orange color */
+    color: #FF9900; 
     font-family: 'Georgia', serif; /* Or your preferred bold font */
     text-transform: uppercase;
     margin-bottom: 60px;
   }
   
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
+   @media (max-width: 768px) {
     .products-section-title {
       font-size: 2rem;
       margin-bottom: 40px;

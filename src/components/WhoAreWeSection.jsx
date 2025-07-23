@@ -1,8 +1,7 @@
-// src/components/WhoAreWeSection.jsx
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './WhoAreWeSection.css'; // Custom CSS for specific styling
+import './WhoAreWeSection.css';
 import { logo_3 } from '../assets';
 
 function WhoAreWeSection() {
@@ -10,7 +9,6 @@ function WhoAreWeSection() {
     <section className="who-are-we-section py-5">
       <Container>
         <Row className="align-items-center justify-content-center">
-          {/* Left Column: Burger King Logo */}
           <Col md={6} className="who-are-we-logo-col d-flex justify-content-center mb-4 mb-md-0">
             <img
               src={logo_3}
@@ -19,8 +17,6 @@ function WhoAreWeSection() {
               onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/350x350/CCCCCC/333333?text=Burger+King+Logo"; }}
             />
           </Col>
-
-          {/* Right Column: Text Content */}
           <Col md={6} className="who-are-we-content text-center text-md-end">
             <h2 className="who-are-we-title mb-4">who are we ?</h2>
             <p className="who-are-we-text mb-3">

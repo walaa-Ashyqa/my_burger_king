@@ -1,9 +1,8 @@
-// src/components/MenuProductsGrid.jsx
-import React from 'react';
+ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import ProductCard from './ProductCard'; // Reusing the existing ProductCard component
+import ProductCard from './ProductCard'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './MenuProductsGrid.css'; // Custom CSS for grid layout
+import './MenuProductsGrid.css';  
 
 function MenuProductsGrid({ products }) {
   return (

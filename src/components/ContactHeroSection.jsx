@@ -1,8 +1,7 @@
-// src/components/ContactHeroSection.jsx
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ContactHeroSection.css'; // Custom CSS for specific styling
+import './ContactHeroSection.css';
 
 function ContactHeroSection() {
   return (

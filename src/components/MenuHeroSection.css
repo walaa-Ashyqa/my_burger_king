@@ -1,45 +1,41 @@
-/* src/components/MenuHeroSection.css */
-
 .menu-hero-section {
-    background-color: #FEEED4; /* Light background from your design */
-    padding-top: 40px; /* To account for fixed header */
+  background-color: #FEEED4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/path-to-menu-hero-background.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.menu-hero-title {
+  position: relative;
+  z-index: 1;
+  font-size: 3.2rem;
+  color: #FF9900;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .menu-hero-section {
+    padding-top: 60px;
     padding-bottom: 40px;
-    min-height: 100px; /* Adjust height as needed */
-    position: relative;
-    overflow: hidden;
   }
-  
-  .menu-hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/path-to-menu-hero-background.png'); /* Replace with your actual background image */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.15; /* Adjust opacity as per design */
-    z-index: 0; /* Behind content */
-  }
-  
   .menu-hero-title {
-    position: relative; /* Bring title above pseudo-element */
-    z-index: 1;
-    font-size: 3.2rem; /* Large font size */
-    color: #FF9900; /* Orange color */
-    font-family: 'Georgia', serif; /* Or your preferred bold font */
-    margin: 0;
+    font-size: 2.5rem;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .menu-hero-section {
-      padding-top: 60px;
-      padding-bottom: 40px;
-    }
-    .menu-hero-title {
-      font-size: 2.5rem;
-    }
-  }
-  
+}

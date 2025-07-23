@@ -1,54 +1,49 @@
-/* src/components/ContactForm.css */
-
 .contact-form {
-    background-color: #FEEED4;
-    border: 1px solid #eee; /* Subtle border */
-  }
-  
-  .contact-form .form-control {
-    
-    border: 1px solid #ddd;
-    padding: 12px 20px;
-    font-size: 1rem;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    -webkit-transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    -moz-transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    -ms-transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    -o-transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background-color: #FEEED4;
+  border: 1px solid #eee;
 }
-  
-  .contact-form .form-control:focus {
-    border-color: #FF9900; /* Orange border on focus */
-    box-shadow: 0 0 0 0.25rem rgba(255, 153, 0, 0.25); /* Orange glow on focus */
-  }
-  
-  .contact-form textarea.form-control {
-    resize: vertical; /* Allow vertical resizing */
-    min-height: 120px;
-  }
-  
-  .send-button {
-    /*Reusingcustom-btn-orangefromHeroSectionBootstrap.cssorglobalApp.css*/background-color: #FF9900;
-    border-color: #FF9900;
-    color: white;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+
+.contact-form .form-control {
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  -webkit-transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  -moz-transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  -ms-transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  -o-transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-  
-  .send-button:hover {
-    background-color: #e68a00;
-    border-color: #e68a00;
-    color: white;
+
+.contact-form .form-control:focus {
+  border-color: #FF9900;
+  box-shadow: 0 0 0 0.25rem rgba(255, 153, 0, 0.25);
+}
+
+.contact-form textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.send-button {
+  background-color: #FF9900;
+  border-color: #FF9900;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #e68a00;
+  border-color: #e68a00;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 30px;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .contact-form {
-      padding: 30px;
-    }
-  }
-  
+}

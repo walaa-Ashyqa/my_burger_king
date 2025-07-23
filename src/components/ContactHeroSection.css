@@ -1,29 +1,25 @@
-/* src/components/ContactHeroSection.css */
-
 .contact-hero-section {
-    background-color: #FF9900; /* Orange background from your design */
-    color: white;
-    padding-top: 40px; /* To account for fixed header */
+  background-color: #FF9900;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 100px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-hero-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-hero-section {
+    padding-top: 60px;
     padding-bottom: 40px;
-    min-height: 100px; /* Adjust height as needed */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-  
   .contact-hero-title {
-    font-size: 1.7rem;
-    font-weight: bold;
-    font-family: 'Georgia', serif; /* Or your preferred bold font */
-    margin: 0;
+    font-size: 2rem;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .contact-hero-section {
-      padding-top: 60px;
-      padding-bottom: 40px;
-    }
-    .contact-hero-title {
-      font-size: 2rem;
-    }
-  }
-  
+}

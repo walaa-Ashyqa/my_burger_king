@@ -1,5 +1,4 @@
-// src/pages/MenuPage.jsx
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import MenuHeroSection from '../components/MenuHeroSection';
 import CategoryTabs from '../components/CategoryTabs';
@@ -7,10 +6,8 @@ import MenuProductsGrid from '../components/MenuProductsGrid';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MenuPage() {
-  const [activeCategory, setActiveCategory] = useState('Burger'); // State to manage active category
-
-  // Dummy product data (you'd fetch this from an API in a real app)
-  // Ensure these image paths are correct for your project
+  const [activeCategory, setActiveCategory] = useState('Burger');  
+ 
   const allProducts = [
     // Burger Category
     { id: 1, name: 'Veg & Chick ...', rating: 4.7, price: 15.99, image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Burger1', category: 'Burger' },
@@ -23,7 +20,7 @@ function MenuPage() {
     { id: 8, name: 'Veg & Chick ...', rating: 4.7, price: 15.99, image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Burger8', category: 'Burger' },
     { id: 9, name: 'Veg & Chick ...', rating: 4.7, price: 15.99, image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Burger9', category: 'Burger' },
 
-    // Example products for other categories (add more as needed)
+    // Example products for other categories  
     { id: 10, name: 'Chicken Sandwich', rating: 4.5, price: 12.50, image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Chicken1', category: 'Chicken' },
     { id: 11, name: 'Grilled Chicken', rating: 4.6, price: 14.00, image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Chicken2', category: 'Chicken' },
     { id: 12, name: 'Pancakes', rating: 4.8, price: 9.00, image: 'https://placehold.co/120x120/FF9900/FFFFFF?text=Breakfast1', category: 'Breakfast' },

@@ -1,43 +1,39 @@
-/* src/components/CategoryTabs.css */
-
 .category-tabs {
-    background-color: #FF9900; /* Orange background */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #FF9900;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-button {
+  background-color: white;
+  color: #FF9900;
+  border: 1px solid white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.category-button:hover {
+  background-color: #FEEED4;
+  border-color: #FEEED4;
+  color: #FF9900;
+}
+
+.category-button.active {
+  background-color: #FEEED4;
+  border-color: #FEEED4;
+  color: #FF9900;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .category-tabs .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  
   .category-button {
-    background-color: white;
-    color: #FF9900; /* Orange text */
-    border: 1px solid white; /* White border for consistency */
-    font-weight: bold;
-    transition: all 0.3s ease;
-    min-width: 120px; /* Ensure minimum width for buttons */
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    min-width: unset;
+    flex-grow: 1;
   }
-  
-  .category-button:hover {
-    background-color: #FEEED4; /* Lighter orange on hover */
-    border-color: #FEEED4;
-    color: #FF9900;
-  }
-  
-  .category-button.active {
-    background-color: #FEEED4; /* Active color */
-    border-color: #FEEED4;
-    color: #FF9900;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for active */
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .category-tabs .container {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-    .category-button {
-      font-size: 0.9rem;
-      padding: 8px 15px;
-      min-width: unset;
-      flex-grow: 1; /* Allow buttons to grow and fill space */
-    }
-  }
-  
+}

@@ -1,5 +1,4 @@
-// src/components/MenuHeroSection.jsx
-import React from 'react';
+ import React from 'react';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './MenuHeroSection.css'; // Custom CSS for specific styling

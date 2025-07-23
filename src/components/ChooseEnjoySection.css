@@ -1,112 +1,107 @@
-/* src/components/ChooseEnjoySection.css */
-
 .choose-enjoy-section {
-    background-color: #FEEED4; /* Light background matching your design */
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
-  .choose-enjoy-title {
-    font-size: 2.5rem;
-    color: #FF9900; /* Orange color */
-    font-family: 'Georgia', serif; /* Or your preferred bold font */
-    text-transform: uppercase;
-  }
-  
-  .choose-enjoy-tagline {
-    font-size: 1.1rem;
-    color: #555;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-  
-  .choose-enjoy-card {
-    max-width: 380px; /* Max width for individual cards */
-    height: 100%; /* Ensure cards in a row have equal height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute space */
-  }
-  
-  .choose-enjoy-image-wrapper {
-    height: 200px; /* Fixed height for image container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Hide overflowing parts of the image */
-  }
-  
-  .choose-enjoy-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    border-radius: 60px;
-    object-fit: cover;
-    /*Coverthearea,croppingifnecessary*/-webkit-border-radius: 20%;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    -webkit-border-radius: 60px;
+  background-color: #FEEED4;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-  
-  .choose-enjoy-card-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-    font-family: 'Georgia', serif; /* Or your preferred bold font */
-  }
-  
-  .choose-enjoy-description {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.6;
-    flex-grow: 1; /* Allow description to take available space */
-  }
-  
-  .choose-enjoy-order-btn {
-    /*Reusingcustom-btn-orangefromHeroSectionBootstrap.css*/background-color: #FF9900;
-    border-color: #FF9900;
-    color: white;
-    font-weight: bold;
-    transition: all 0.3s ease;
 
+.choose-enjoy-title {
+  font-size: 2.5rem;
+  color: #FF9900;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
 }
-  
-  .choose-enjoy-order-btn:hover {
-    background-color: #e68a00;
-    border-color: #e68a00;
-    color: white;
+
+.choose-enjoy-tagline {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.choose-enjoy-card {
+  max-width: 380px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.choose-enjoy-image-wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.choose-enjoy-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  object-fit: cover;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  -webkit-border-radius: 60px;
+}
+
+.choose-enjoy-card-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
+.choose-enjoy-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.choose-enjoy-order-btn {
+  background-color: #FF9900;
+  border-color: #FF9900;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.choose-enjoy-order-btn:hover {
+  background-color: #e68a00;
+  border-color: #e68a00;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .choose-enjoy-title {
+    font-size: 2rem;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 992px) {
-    .choose-enjoy-title {
-      font-size: 2rem;
-    }
-    .choose-enjoy-tagline {
-      font-size: 1rem;
-    }
+  .choose-enjoy-tagline {
+    font-size: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .choose-enjoy-section {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-    .choose-enjoy-card {
-      max-width: 300px; /* Adjust max width for smaller cards */
-    }
-    .choose-enjoy-card-name {
-      font-size: 1.5rem;
-    }
-    .choose-enjoy-description {
-      font-size: 0.9rem;
-    }
+}
+
+@media (max-width: 768px) {
+  .choose-enjoy-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
-  
-  @media (max-width: 576px) {
-    .choose-enjoy-card {
-      max-width: 90%; /* Almost full width on very small screens */
-    }
+  .choose-enjoy-card {
+    max-width: 300px;
   }
-  
+  .choose-enjoy-card-name {
+    font-size: 1.5rem;
+  }
+  .choose-enjoy-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .choose-enjoy-card {
+    max-width: 90%;
+  }
+}

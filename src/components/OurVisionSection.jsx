@@ -1,8 +1,7 @@
-// src/components/OurVisionSection.jsx
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './OurVisionSection.css'; // Custom CSS for specific styling
+import './OurVisionSection.css';
 import { Burger_King } from '../assets';
 
 function OurVisionSection() {
@@ -10,7 +9,6 @@ function OurVisionSection() {
     <section className="our-vision-section py-5">
       <Container>
         <Row className="align-items-center justify-content-center">
-          {/* Left Column: Text Content */}
           <Col md={6} className="our-vision-content text-center text-md-start mb-4 mb-md-0">
             <h2 className="our-vision-title mb-4">Our vision</h2>
             <p className="our-vision-text mb-0">
@@ -33,17 +31,13 @@ function OurVisionSection() {
               model.
             </p>
           </Col>
-
-          {/* Right Column: Store Images */}
           <Col md={6} className="our-vision-images-col d-flex justify-content-center ">
-            {/* Replace with your actual store image paths */}
             <img
               src={Burger_King}
               alt="Burger King Store 1"
               className="img-fluid rounded-3 shadow-sm vision-image"
               onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/250x200/CCCCCC/333333?text=Image+Not+Found"; }}
             />
-            
           </Col>
         </Row>
       </Container>
